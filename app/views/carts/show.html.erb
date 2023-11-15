@@ -4,6 +4,7 @@
     <h1>My Cart</h1>
   </header>
 
+  <% unless cart_subtotal_cents == 0 %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +49,9 @@
       <% end %>
     </div>
   </div>
-
+  <% else %>
+  <div class="alert alert-info">
+    <p>Cart is currently empty. Click <a href="<%= root_path %>">here</a> to begin adding items.</p>
+  </div>
+  <% end %>
 </section>
