@@ -91,8 +91,10 @@ form.button_to {
 }
 
 .sticky-nav {
+  display: flex;
   background: green;
   position: sticky;
+  justify-content: space-between;
   top: 0;
   z-index: 900;
   font-weight: 700;

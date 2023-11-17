@@ -1,0 +1,52 @@
+<div class="user_signup form-group">
+  <h1>Sign Up</h1>
+  <form action="<%= users_path %>" method="post">
+    <table>
+      <tr>
+        <td>
+          <label for="user_first_name">First Name:</label>
+        </td>
+        <td>
+          <input type="text" name="user[first_name]" class="form-control">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="user_last_name">Last Name:</label>
+        </td>
+        <td>
+          <input type="text" name="user[last_name]" class="form-control">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="user_email">Email:</label>
+        </td>
+        <td>
+          <input type="email" name="user[email]" class="form-control">
+       </td>
+      </tr>
+      <tr>
+        <td>
+         <label for="user_password">Password:</label>
+        </td>
+        <td>
+          <input type="password" name="user[password]" class="form-control">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="user_password_confirmation">Password Confirmation:</label>
+        </td>
+        <td>
+          <input type="password" name="user[password_confirmation]"       class="form-control">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Sign Up" class="btn btn-primary">
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>

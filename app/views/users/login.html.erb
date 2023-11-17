@@ -1,0 +1,17 @@
+<% if flash[:danger] %>
+  <div class="alert alert-danger">
+    <%= flash[:danger] %>
+  </div>
+<% end %>
+<br/>
+<h1>Login</h1>
+<br/>
+<%= form_with(url: authenticate_users_path, method: :post) do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email, name: 'session[email]' %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password, name: 'session[password]' %>
+
+  <%= form.submit 'Login' %>
+<% end %>
