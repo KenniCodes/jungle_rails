@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
   before do
-    @category = Category.create(name: "some_categoty")
+    @category = Category.create(name: "some_category")
   end
 
   describe 'Product Validations' do
